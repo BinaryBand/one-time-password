@@ -1,6 +1,6 @@
 {
   "name": "one-time-password",
-  "version": "0.1.3",
+  "version": "0.1.5",
   "description": "A simple library for deriving one-time passwords from a base32 key.",
   "main": "dist/index.js",
   "scripts": {
@@ -10,6 +10,7 @@
   "author": "Shane Davenport",
   "license": "MIT",
   "dependencies": {
+    "assert": "^2.0.0",
     "buffer": "^6.0.3",
     "crypto-js": "^4.1.1"
   },

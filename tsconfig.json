@@ -10,5 +10,9 @@
     "sourceMap": true,
     "declaration": true,
   },
-  "exclude": ["**/*.test.ts"]
+  "exclude": [
+    "**/*.test.ts",
+    "./dist/**/*",
+    "./node_modules/**/*"
+  ]
 }

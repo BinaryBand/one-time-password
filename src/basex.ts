@@ -1,4 +1,4 @@
-import { strict as assert } from 'assert';
+import assert from 'assert';
 
 
 export const BASE_32: string = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ234567';
