@@ -1,7 +1,7 @@
 import WordArray from 'crypto-js/lib-typedarrays';
 import { decodeBaseX, BASE_32 } from './basex';
 import { HmacSHA1 as hmac } from 'crypto-js';
-import { Buffer } from 'safer-buffer';
+import { Buffer } from 'buffer';
 
 
 export type Endian = 'be' | 'le';
