@@ -1,6 +1,6 @@
 {
   "name": "one-time-password",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A simple library for deriving one-time passwords from a base32 key.",
   "main": "dist/index.js",
   "scripts": {
@@ -20,5 +20,6 @@
     "jest": "^28.1.1",
     "ts-jest": "^28.0.5",
     "typescript": "^4.7.4"
-  }
+  },
+  "keywords": ["security", "cryptography", "totp", "password-safety"]
 }
