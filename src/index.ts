@@ -4,7 +4,7 @@ import { HmacSHA1 as hmac } from 'crypto-js';
 import { Buffer } from 'safer-buffer';
 
 
-type Endian = 'be' | 'le';
+export type Endian = 'be' | 'le';
 
 function numToArray(num: number, endian: Endian = 'be', size?: number): Uint8Array {
     let len: number = size || Math.ceil(Math.log2(num) / 8);

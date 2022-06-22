@@ -14,20 +14,24 @@ Requirements:
   - Node.js
   - NPM (Node.js package manager)
 
-<!-- Install with:
+Install with:
 
-    npm install one-time-password -->
+    npm install one-time-password
 
 ### How To Use
 
-    import * as OTP from 'one-time-password';
+```typescript
+import * as OTP from 'one-time-password';
 
+// A base32-encoded key.
+const dummyKey: string = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ234567';
 
-    const dummyKey: string = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ234';
+// Derive a 6-digit, time-based token from 'key'.
+const token: string = OTP.generate(dummyKey);
 
-    const token: string = OTP.generate(dummyKey);
-
-    console.log(OTP.verify(dummyKey, token));
+// If token is valid.
+console.log(OTP.verify(dummyKey, token));
+```
 
 ## Built With
 
@@ -51,9 +55,3 @@ We use [Semantic Versioning](http://semver.org/) for versioning.
 
 This project is licensed under the [MIT License](https://license.md/)
 Creative Commons License - see the [LICENSE.md](https://license.md/) file for details.
-
-## Acknowledgments
-
-  - Hat tip to anyone whose code is used
-  - Inspiration
-  - etc
