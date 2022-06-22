@@ -26,7 +26,7 @@ import * as OTP from 'one-time-password';
 // A base32-encoded key.
 const dummyKey: string = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ234567';
 
-// Derive a 6-digit, time-based token from 'key'.
+// Derive a 6-digit, time-based token from 'dummyKey'.
 const token: string = OTP.generate(dummyKey);
 
 // If token is valid.
